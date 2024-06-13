@@ -34,6 +34,7 @@ function verifier(nombre) {
         instruction.textContent = "#" + coups + " (" + nombre + ")" +  " Félicitations, vous avez trouvé le juste prix !";
         // Ajouter les classes instruction et fini
         instruction.className  = 'instruction fini';
+        input.disabled = true;
     }
 
     document.querySelector('#instructions').appendChild(instruction);
